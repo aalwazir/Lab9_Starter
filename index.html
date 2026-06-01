@@ -88,6 +88,12 @@
   </main>
 
   <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+  <script>
+    window.TrackJS && TrackJS.install({ 
+      token: "a2d5428e5ddd42b29660ba2edcfab9fc"
+      // for more configuration options, see https://docs.trackjs.com
+    });
+  </script>
 
   <script>
     let form = document.querySelector('form');
@@ -268,11 +274,6 @@
 
       // This intentionally causes an uncaught global error.
       nonExistentFunction();
-    });
-
-    window.TrackJS && TrackJS.install({ 
-      token: "a2d5428e5ddd42b29660ba2edcfab9fc"
-      // for more configuration options, see https://docs.trackjs.com
     });
   </script>
 </body>
